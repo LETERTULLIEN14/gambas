@@ -1,0 +1,223 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MakeWebSite 3.6.90\n"
+"PO-Revision-Date: 2014-12-16 11:07 UTC\n"
+"Last-Translator: Benoît Minisini <gambas@users.sourceforge.net>\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .project:1
+msgid "Gambas web site generator"
+msgstr "Gambas网站生成器"
+
+#: .project:2
+msgid "Generates Gambas web site from html templates and ChangeLog files."
+msgstr "从模板和ChangeLog文件生成Gambas网站。"
+
+#: MTranslation.module:9
+msgid "Architecture"
+msgstr "体系结构"
+
+#: MTranslation.module:10
+msgid "<b><i>Gambas</i></b> is a free development environment based on a <i>Basic</i> interpreter with object extensions, a bit like <i>Visual Basic&#8482;</i> (but it is <i><b>NOT</b></i> a clone&nbsp;!)."
+msgstr "<b><i>Gambas</i></b>是一个自由开发环境，基于一个带有对象扩展的<i>Basic</i>解释器，有点像<i>Visual Basic&#8482;</i>（但是它<i><b>不是</b></i>一个克隆&nbsp;！）。"
+
+#: MTranslation.module:11
+msgid "Read the <a href=\"$(WIKI:/doc/intro)\">introduction</a> for more information."
+msgstr "更多信息阅读<a href=\"$(WIKI:/doc/intro)\">介绍</a>。"
+
+#: MTranslation.module:12
+msgid "Click there to see all news"
+msgstr "点击这里看所有新闻"
+
+#: MTranslation.module:13
+msgid "Download"
+msgstr "下载"
+
+#: MTranslation.module:14
+msgid "Release Notes"
+msgstr "版本注释"
+
+#: MTranslation.module:15
+msgid "Donate with PayPal"
+msgstr "用PayPal捐赠"
+
+#: MTranslation.module:16
+msgid "Flattr this"
+msgstr ""
+
+#: MTranslation.module:17
+msgid "You can support <b><i>Gambas</i></b> by making a small donation with"
+msgstr "你可以通过小的捐赠来支持<b><i>Gambas</i></b>，通过"
+
+#: MTranslation.module:18
+msgid "or by using"
+msgstr "或被使用"
+
+#: MTranslation.module:19
+msgid "Hall Of Fame"
+msgstr "贡献者名录"
+
+#: MTranslation.module:20
+msgid "Developers"
+msgstr "开发人员"
+
+#: MTranslation.module:21
+msgid "Developer"
+msgstr "开发人员"
+
+#: MTranslation.module:22
+msgid "Country"
+msgstr "国家"
+
+#: MTranslation.module:23
+msgid "Working or have worked on..."
+msgstr "曾或正工作于..."
+
+#: MTranslation.module:24
+msgid "If you are developing anything directly related to <b><i>Gambas</i></b> or its IDE, and not on the previous list, or if you find a mistake in this list, then write me! And explain me who you are and what you have done, so that I add you to the Hall Of Fame."
+msgstr "如果你正在开发一些与<b><i>Gambas</i></b>直接相关的东西或者它的IDE，而且不在前面的列表中，或者如果你在列表中找到一个错误，那么写信给我！并告诉我你是谁以及你做了什么以便我把你添加入贡献者名录。"
+
+#: MTranslation.module:25
+msgid "Translations"
+msgstr "翻译"
+
+#: MTranslation.module:26
+msgid "Language"
+msgstr "语言"
+
+#: MTranslation.module:27
+msgid "Translator(s)"
+msgstr "译者"
+
+#: MTranslation.module:28
+msgid "If you want to translate <b><i>Gambas</i></b>, write me so that I add you on the previous table, and read the <a href=\"$(WIKI:/howto/translate)\">How To</a> carefully."
+msgstr "如果你想翻译<b><i>Gambas</i></b>，写信给我以便将你添加到前面的表中，并认真阅读<a href=\"$(WIKI:/howto/translate)\">如何</a>。"
+
+#: MTranslation.module:29
+msgid "If you want to work on an already existing translation, contact the translators."
+msgstr "如果你想参加一个已经存在的翻译，请联系译者。"
+
+#: MTranslation.module:30
+msgid "English"
+msgstr "英语"
+
+#: MTranslation.module:31
+msgid "French"
+msgstr "法语"
+
+#: MTranslation.module:32
+msgid "Spanish"
+msgstr "西班牙语"
+
+#: MTranslation.module:33
+msgid "Catalonia"
+msgstr "加泰罗尼亚语"
+
+#: MTranslation.module:34
+msgid "German"
+msgstr "德语"
+
+#: MTranslation.module:35
+msgid "Dutch"
+msgstr "荷兰语"
+
+#: MTranslation.module:36
+msgid "Czech Republic"
+msgstr "捷克语"
+
+#: MTranslation.module:37
+msgid "Turkish"
+msgstr "土耳其语"
+
+#: MTranslation.module:38
+msgid "Arabic"
+msgstr "阿拉伯语"
+
+#: MTranslation.module:39
+msgid "Korean"
+msgstr "朝鲜语"
+
+#: MTranslation.module:40
+msgid "Chinese"
+msgstr "中文"
+
+#: MTranslation.module:41
+msgid "Home"
+msgstr "首页"
+
+#: MTranslation.module:42
+msgid "Introduction"
+msgstr "介绍"
+
+#: MTranslation.module:43
+msgid "What is Gambas?"
+msgstr "Gambas是什么？"
+
+#: MTranslation.module:44
+msgid "F. A. Q."
+msgstr "常见问题"
+
+#: MTranslation.module:45
+msgid "Reporting a problem"
+msgstr "报告问题"
+
+#: MTranslation.module:46
+msgid "Resources"
+msgstr "资源"
+
+#: MTranslation.module:47
+msgid "Bug tracker"
+msgstr "漏洞追踪"
+
+#: MTranslation.module:48
+msgid "Compilation &amp; Installation"
+msgstr "编译 &amp; 安装"
+
+#: MTranslation.module:49
+msgid "Distributions &amp; O.S."
+msgstr "发行版 &amp; 操作系统"
+
+#: MTranslation.module:50
+msgid "Mailing lists/Forums"
+msgstr "邮件列表/论坛"
+
+#: MTranslation.module:51
+msgid "Screenshots"
+msgstr "屏幕截图"
+
+#: MTranslation.module:52
+msgid "Some Applications"
+msgstr "一些应用程序"
+
+#: MTranslation.module:53
+msgid "Documentation"
+msgstr "文档"
+
+#: MTranslation.module:54
+msgid "Books"
+msgstr "书籍"
+
+#: MTranslation.module:55
+msgid "License"
+msgstr "许可"
+
+#: MTranslation.module:56
+msgid "Wiki Encyclopaedia"
+msgstr "维基（wiki）百科全书"
+
+#: MTranslation.module:57
+msgid "Browse Source Code"
+msgstr "查看源代码"
+
+#: MTranslation.module:58
+msgid "No software patents in Europe!"
+msgstr "在欧洲无软件专利！"
+
+#: MTranslation.module:59
+msgid "The greatest formula of the world!"
+msgstr "世界上最大的公式！"
+

@@ -1,0 +1,15 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.6.90
+Title=ReportsEvolution
+Startup=Report3
+Version=3.6.90
+VersionFile=1
+Component=gb.image
+Component=gb.gui
+Component=gb.form
+Component=gb.db
+Component=gb.settings
+TabSize=2
+Language=fr
+Type=Component
+Packager=1

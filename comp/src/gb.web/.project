@@ -1,0 +1,16 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.6.90
+Title=Web applications tools
+Startup=Main
+Version=3.6.90
+VersionFile=1
+Component=gb.web
+Authors="Benoît Minisini"
+TabSize=2
+Language=fr
+Type=Component
+Maintainer=benoit
+Vendor=Princeton
+Address=benoit@localhost
+License=General Public Licence
+Packager=1

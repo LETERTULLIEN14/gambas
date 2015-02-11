@@ -1,0 +1,12 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.6.90
+Title=SmallWiki
+Startup=Main
+UseHttpServer=1
+Icon=.public/logo.png
+Version=1.0.0
+Component=gb.web
+Description="Web application example.\n\nThis example is a fully functional wiki based on the Gambas markdown syntax and the Gambas web application component."
+TabSize=2
+Vendor=Example
+Packager=1

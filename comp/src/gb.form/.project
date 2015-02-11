@@ -1,0 +1,28 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.6.90
+Title=More controls for graphical components
+Startup=FTestCompletion
+Version=3.6.90
+VersionFile=1
+Component=gb.image
+Component=gb.gui
+Component=gb.settings
+Authors="Benoît Minisini"
+Environment="GB_GUI=gb.qt4"
+TabSize=2
+Translate=1
+Language=en
+Type=Component
+Maintainer=Benoit Minisini
+Vendor=vendor
+Address=benoit@minisini.fr
+License=General Public Licence
+Prefix=1
+PackageName=gambas3-vendor-gb-form-3.6.90
+CreateEachDirectory=1
+Packager=1
+Systems=slackware
+Groups=debian:"embedded"
+Groups=slackware:"Applications/Emulators"
+ExtraFiles=slackware:"control/colorpalette.png\t"
+Groups=ubuntu:"electronics"

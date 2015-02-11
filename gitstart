@@ -1,0 +1,6 @@
+echo "# gambas" >> README2.md
+git init
+git add README2.md
+git commit -m "first commit"
+git remote add  origin https://github.com/justlostintime/gambas.git
+git push -u origin master

@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,48,35)
+  Arrangement = Arrange.Fill
+  { ListBox1 ListBox
+    MoveScaled(3,8,16,21)
+    Expand = True
+    Border = False
+    Mode = Select.Multiple
+  }
+}

@@ -1,0 +1,23 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,105,62)
+  Spacing = True
+  Margin = True
+  Padding = 24
+  { TabPanel2 TabPanel
+    MoveScaled(5,5,78,33)
+    #Translate = False
+    Expand = True
+    Moveable = True
+    Highlight = True
+    Index = 0
+    Text = ""
+    Index = 0
+  }
+  { Timer1 #Timer
+    #MoveScaled(75,45)
+    Enabled = True
+    Delay = 100
+  }
+}

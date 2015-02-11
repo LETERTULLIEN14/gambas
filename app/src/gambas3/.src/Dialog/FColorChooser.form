@@ -1,0 +1,55 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,2.1429,55,65)
+  Text = ("Select a color")
+  Persistent = True
+  Arrangement = Arrange.Vertical
+  { tabColor TabPanel
+    MoveScaled(0,0,53,57)
+    Expand = True
+    Arrangement = Arrange.Fill
+    Margin = True
+    Border = False
+    Count = 2
+    Index = 0
+    Text = ("System")
+    { gvwColor GridView
+      MoveScaled(2,2,43,44)
+      Grid = False
+    }
+    Index = 1
+    Text = ("Free")
+    { dlgColor ColorChooser
+      MoveScaled(1,1,50,51)
+      Expand = True
+      Border = False
+      ShowCustom = True
+    }
+    Index = 0
+  }
+  { Panel2 Panel
+    MoveScaled(1,58,53,6)
+    Arrangement = Arrange.Horizontal
+    Spacing = True
+    Margin = True
+    { cmbPrefix ComboBox
+      MoveScaled(2,0,15,4)
+      ReadOnly = True
+    }
+    { Panel1 Panel
+      MoveScaled(19,0,2,4)
+      Expand = True
+    }
+    { btnOK Button
+      MoveScaled(22,0,15,4)
+      Text = ("OK")
+      Default = True
+    }
+    { btnCancel Button
+      MoveScaled(38,0,15,4)
+      Text = ("Cancel")
+      Cancel = True
+    }
+  }
+}

@@ -1,0 +1,310 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,100,82)
+  Background = Color.TextBackground
+  Text = ("Gambas Software Farm")
+  Arrangement = Arrange.Vertical
+  { dwgTitle DrawingArea
+    MoveScaled(1,1,66,8)
+    Background = &H3398C3&
+  }
+  { timLoad #Timer
+    #MoveScaled(117,2)
+    Delay = 500
+  }
+  { VBox1 HBox
+    MoveScaled(0,10,98,6)
+    Background = &HDF6B00&
+    Foreground = &HFFFFFF&
+    Spacing = True
+    { btnGoBack ToolButton
+      MoveScaled(0,0,6,6)
+      Enabled = False
+      Mouse = Mouse.Pointing
+      Picture = Picture["icon:/medium/left"]
+    }
+    { Panel12 Panel
+      MoveScaled(8,0,89,6)
+      Expand = True
+      Arrangement = Arrange.Horizontal
+      Spacing = True
+      Margin = True
+      { Label2 Label
+        MoveScaled(0,0,8,4)
+        AutoResize = True
+        Text = ("Farm")
+      }
+      { Panel14 Panel
+        MoveScaled(11,0,1,4)
+      }
+      { cmbFarm ComboBox
+        MoveScaled(15,0,29,4)
+        ReadOnly = True
+      }
+      { Panel3 Panel
+        MoveScaled(46,0,1,4)
+        Expand = True
+      }
+      { panUser Panel
+        MoveScaled(48,0,22,4)
+        Expand = True
+        Arrangement = Arrange.Horizontal
+        Spacing = True
+        Invert = True
+        { Panel6 Panel
+          MoveScaled(19,0,2,4)
+        }
+        { lblIdentity Label
+          MoveScaled(7,0,9,4)
+          Font = Font["Bold"]
+          AutoResize = True
+        }
+        { picIdentity PictureBox
+          MoveScaled(2,0,4,4)
+          Picture = Picture["icon:/medium/identity"]
+          Alignment = Align.Center
+        }
+      }
+      { btnLogin Button
+        MoveScaled(73,0,15,4)
+        AutoResize = True
+        Text = ("Configure") & "..."
+      }
+    }
+  }
+  { wizFarm Wizard
+    MoveScaled(1,17,96,64)
+    Expand = True
+    Arrangement = Arrange.Vertical
+    Count = 3
+    ShowTitle = False
+    ShowButton = False
+    Border = False
+    Animated = True
+    Index = 0
+    Text = ("")
+    { panGroup HPanel
+      MoveScaled(5,2,85,36)
+      Expand = True
+      Spacing = True
+      Margin = True
+    }
+    Index = 1
+    Text = ("")
+    { Panel1 VBox
+      MoveScaled(0,1,92,17)
+      AutoResize = True
+      Spacing = True
+      Margin = True
+      { HBox1 HBox
+        MoveScaled(2,1,86,4)
+        Spacing = True
+        { Label1 Label
+          MoveScaled(0,0,11,4)
+          Text = ("Show")
+        }
+        { cmbSort ComboBox
+          MoveScaled(15,0,29,4)
+          ReadOnly = True
+          List = [("Most recent"), ("Most downloaded"), ("Most popular"), ("Installed")]
+        }
+        { chkShowFilter CheckBox
+          MoveScaled(48,0,24,4)
+          Text = ("Show filters")
+        }
+      }
+      { panFilter VBox
+        MoveScaled(2,6,89,10)
+        Visible = False
+        Spacing = True
+        { Panel4 HPanel
+          MoveScaled(0,0,88,5)
+          Spacing = True
+          { Label3 Label
+            MoveScaled(0,0,11,4)
+            Text = ("Tags")
+          }
+          { tagFarm CTagEditor
+            MoveScaled(15,0,72,5)
+            Expand = True
+          }
+        }
+        { Panel5 HPanel
+          MoveScaled(0,6,89,4)
+          Spacing = True
+          { Label4 Label
+            MoveScaled(0,0,11,4)
+            Text = ("Filter")
+          }
+          { Panel2 Panel
+            MoveScaled(54,0,34,4)
+            Expand = True
+            Arrangement = Arrange.Fill
+            Border = Border.Plain
+            { txtFilter ButtonBox
+              MoveScaled(1,0,31,4)
+              Expand = True
+              Picture = Picture["icon:/small/clear"]
+              Border = False
+            }
+          }
+        }
+      }
+    }
+    { Separator3 Separator
+      MoveScaled(20,22,21,0)
+    }
+    { Panel7 Panel
+      MoveScaled(1,24,91,38)
+      Background = Color.TextBackground
+      Foreground = Color.TextForeground
+      Expand = True
+      Arrangement = Arrange.Fill
+      { svwFarm ScrollView
+        MoveScaled(3,7,69,23)
+        Background = Color.TextBackground
+        Foreground = Color.TextForeground
+        Expand = True
+        Arrangement = Arrange.Vertical
+        Spacing = True
+        Margin = True
+        Border = False
+        ScrollBar = Scroll.Vertical
+      }
+      { spnFarm Spinner
+        MoveScaled(77,27,10,9)
+        Visible = False
+        Ignore = True
+      }
+    }
+    Index = 2
+    Text = ("")
+    { Panel9 Panel
+      MoveScaled(5,0,77,53)
+      Background = Color.TextBackground
+      Foreground = Color.TextForeground
+      Expand = True
+      Arrangement = Arrange.Vertical
+      Margin = True
+      { panTitle HBox
+        MoveScaled(2,1,71,10)
+        Spacing = True
+        Margin = True
+        { picIcon PictureBox
+          MoveScaled(1,0,8,8)
+          Stretch = True
+          Alignment = Align.Center
+        }
+        { Panel13 Panel
+          MoveScaled(13,0,1,7)
+        }
+        { Panel8 VBox
+          MoveScaled(16,0,29,8)
+          Expand = True
+          { lblName Label
+            MoveScaled(0,0,27,4)
+            Font = Font["Bold,+5"]
+            Alignment = Align.TopNormal
+          }
+          { lblVersion Label
+            MoveScaled(2,4,16,4)
+            Font = Font["+2"]
+          }
+        }
+        { dwgStat DrawingArea
+          MoveScaled(46,1,17,4)
+        }
+      }
+      { Separator1 Separator
+        MoveScaled(28,13,16,0)
+        Visible = False
+      }
+      { panDesc HSplit
+        MoveScaled(2,15,73,36)
+        Expand = True
+        Border = False
+        { Panel11 VBox
+          MoveScaled(1,1,52,33)
+          Spacing = True
+          { lblDesc Label
+            MoveScaled(2,1,14,3)
+            Font = Font["Bold"]
+            Text = ("Description")
+          }
+          { txtDescription TextArea
+            MoveScaled(2,5,29,4)
+            ReadOnly = True
+            Wrap = True
+            Border = False
+            ScrollBar = Scroll.None
+          }
+          { panURL HBox
+            MoveScaled(2,10,29,4)
+            { urlWebSite URLLabel
+              MoveScaled(0,0,18,3)
+              AutoResize = True
+              Text = ("Developer web site")
+            }
+          }
+          { lblTags Label
+            MoveScaled(2,16,14,3)
+            Font = Font["Bold"]
+            Text = ("Tags")
+          }
+          { panTags HPanel
+            MoveScaled(2,20,26,8)
+            AutoResize = True
+            Spacing = True
+          }
+        }
+        { imvScreenshot ImageView
+          MoveScaled(58,1,14,20)
+          Expand = True
+        }
+      }
+      { spnScreenshot Spinner
+        MoveScaled(64,10,8,6)
+        Ignore = True
+      }
+    }
+    { HBox2 HBox
+      MoveScaled(2,54,86,7)
+      Background = &HFFFFFF&
+      Spacing = True
+      Margin = True
+      { btnInstall Button
+        MoveScaled(9,0,15,5)
+        Mouse = Mouse.Pointing
+        AutoResize = True
+        Text = ("Install")
+      }
+      { btnDownload Button
+        MoveScaled(25,0,15,5)
+        Mouse = Mouse.Pointing
+        AutoResize = True
+        Text = ("Download")
+        Picture = Picture["icon:/medium/download"]
+      }
+      { btnVote Button
+        MoveScaled(38,0,15,5)
+        Mouse = Mouse.Pointing
+        AutoResize = True
+        Text = ("Vote")
+        Picture = Picture["icon:/medium/bookmark"]
+      }
+      { Panel10 Panel
+        MoveScaled(53,0,2,5)
+        Expand = True
+      }
+      { btnRemove Button
+        MoveScaled(57,0,15,5)
+        Mouse = Mouse.Pointing
+        AutoResize = True
+        Text = ("Remove")
+        Picture = Picture["icon:/medium/remove"]
+      }
+    }
+    Index = 0
+  }
+}

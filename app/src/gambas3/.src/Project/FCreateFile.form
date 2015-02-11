@@ -1,0 +1,172 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,82,82)
+  Text = ("New file")
+  Icon = Picture["icon:/small/new"]
+  Persistent = True
+  Arrangement = Arrange.Vertical
+  Spacing = True
+  Margin = True
+  { tabFile TabPanel
+    MoveScaled(1,1,80,63)
+    Expand = True
+    Arrangement = Arrange.Vertical
+    Count = 2
+    Index = 0
+    Text = ("New")
+    { HBox3 HBox
+      MoveScaled(1,1,77,56)
+      Expand = True
+      { lvwType ListView
+        MoveScaled(2,2,29,51)
+        Mouse = Mouse.Pointing
+        Border = False
+      }
+      { Separator2 Separator
+        MoveScaled(33,27,0,8)
+      }
+      { panOption VBox
+        MoveScaled(34,1,42,52)
+        Expand = True
+        Spacing = True
+        Margin = True
+        { Label9 Label
+          MoveScaled(0,0,25,4)
+          Font = Font["Bold"]
+          Text = ("Name")
+        }
+        { txtName TextBox
+          MoveScaled(0,3,26,4)
+        }
+        { lblOption Label
+          MoveScaled(0,7,25,4)
+          Font = Font["Bold"]
+          Text = ("Options")
+        }
+        { panImageOption Panel
+          MoveScaled(0,11,32,15)
+          Tag = "image"
+          { Label7 Label
+            MoveScaled(1,0,12,4)
+            Text = ("Width")
+          }
+          { txtWidth SpinBox
+            MoveScaled(13,0,9,4)
+            MinValue = 1
+            MaxValue = 1024
+            Step = 8
+            Value = 8
+          }
+          { Label8 Label
+            MoveScaled(1,5,12,4)
+            Text = ("Height")
+          }
+          { txtHeight SpinBox
+            MoveScaled(13,5,9,4)
+            MinValue = 1
+            MaxValue = 1024
+            Step = 8
+            Value = 8
+          }
+          { btnLinked ToggleButton
+            MoveScaled(27,0,3,9)
+            Picture = Picture["img/32/linked.png"]
+            Value = True
+          }
+          { Label11 Label
+            MoveScaled(1,10,11,4)
+            Text = ("Type")
+          }
+          { cmbImageType ComboBox
+            MoveScaled(13,10,17,4)
+            #Translate = False
+            ReadOnly = True
+            List = ["PNG", "JPEG", "XPM", "GIF"]
+          }
+          { Label13 Label
+            MoveScaled(23,0,4,4)
+            #Translate = False
+            Text = "px"
+          }
+          { Label14 Label
+            MoveScaled(23,5,4,4)
+            #Translate = False
+            Text = "px"
+          }
+        }
+        { panFormOption Panel
+          MoveScaled(0,28,41,4)
+          Tag = "form"
+          { chkDialog CheckBox
+            MoveScaled(1,0,39,4)
+            Text = ("Dialog box management")
+          }
+        }
+        { Panel2 Panel
+          MoveScaled(0,33,42,9)
+          Tag = "class"
+          { Label10 Label
+            MoveScaled(1,0,15,4)
+            Text = ("Parent class")
+          }
+          { cmbParent ComboBox
+            MoveScaled(17,0,25,4)
+            ReadOnly = True
+          }
+          { chkExported CheckBox
+            MoveScaled(0,5,39,4)
+            Text = ("Exported")
+          }
+        }
+        { Panel3 Panel
+          MoveScaled(0,44,41,4)
+          Tag = "image,html,css,js"
+          { chkExt CheckBox
+            MoveScaled(1,0,36,4)
+            Text = ("Automatic extension")
+            Value = CheckBox.True
+          }
+        }
+      }
+    }
+    Index = 1
+    Text = ("Existing")
+    { fchExisting FileChooser
+      MoveScaled(2,1,76,48)
+      Expand = True
+      Border = False
+      Multi = True
+      Margin = True
+      ReadOnly = True
+    }
+    { Separator1 Separator
+      MoveScaled(26,50,9,0)
+    }
+    { Panel1 Panel
+      MoveScaled(2,53,70,5)
+      Arrangement = Arrange.Fill
+      Margin = True
+      { chkLink CheckBox
+        MoveScaled(1,1,56,3)
+        Text = ("Create symbolic links")
+      }
+    }
+    Index = 0
+  }
+  { HBox6 HBox
+    MoveScaled(9,68,60,4)
+    Spacing = True
+    Invert = True
+    { btnCancel Button
+      MoveScaled(45,0,15,4)
+      Text = ("Cancel")
+      Cancel = True
+    }
+    { btnOK Button
+      MoveScaled(29,0,15,4)
+      Text = ("OK")
+      Default = True
+    }
+  }
+}

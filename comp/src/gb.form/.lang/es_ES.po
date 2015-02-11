@@ -1,0 +1,484 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gb.form 3.6.0\n"
+"POT-Creation-Date: 2014-10-13 17:28 UTC\n"
+"PO-Revision-Date: 2014-10-13 17:28 UTC\n"
+"Last-Translator: jesus <jesus@jesus-linux>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .project:1
+msgid "More controls for graphical components"
+msgstr "Más controles para los componentes gráficos"
+
+#: CBookmarkList.class:46
+msgid "Home"
+msgstr "Home"
+
+#: CBookmarkList.class:48
+msgid "Desktop"
+msgstr "Escritorio"
+
+#: CBookmarkList.class:50
+msgid "System"
+msgstr "Sistema"
+
+#: DirView.class:459
+msgid "Cannot rename directory."
+msgstr "No se puede renombrar el directorio."
+
+#: DirView.class:489
+msgid "New folder"
+msgstr "Nueva carpeta"
+
+#: DirView.class:507
+msgid "Cannot create directory."
+msgstr "No se puede crear el directorio."
+
+#: FCalendar.form:48
+msgid "Today"
+msgstr "Hoy"
+
+#: FCalendar.form:54
+msgid "Previous month"
+msgstr "Mes anterior"
+
+#: FCalendar.form:88
+msgid "Next month"
+msgstr "Próximo mes"
+
+#: FCalendar.form:151
+msgid "Apply"
+msgstr "Aplicar"
+
+#: FColorChooser.class:621
+msgid "Last colors"
+msgstr "Colores recientes"
+
+#: FColorChooser.form:51
+msgid "Remove color"
+msgstr "Eliminar color"
+
+#: FColorChooser.form:56
+msgid "Remove all colors"
+msgstr "Eliminar todos los colores"
+
+#: FColorChooser.form:61
+msgid "Sort colors"
+msgstr "Ordenar colores"
+
+#: FColorChooser.form:103
+msgid "Follow color grid"
+msgstr "Seguir el color de la rejilla"
+
+#: FColorChooser.form:149
+msgid "R"
+msgstr "-"
+
+#: FColorChooser.form:154
+msgid "G"
+msgstr "-"
+
+#: FColorChooser.form:159
+msgid "B"
+msgstr "-"
+
+#: FColorChooser.form:170
+msgid "H"
+msgstr "-"
+
+#: FColorChooser.form:175
+msgid "S"
+msgstr "-"
+
+#: FColorChooser.form:186
+msgid "V"
+msgstr "-"
+
+#: FColorChooser.form:202
+msgid "A"
+msgstr "-"
+
+#: FDirChooser.class:406
+msgid "File not found."
+msgstr "Archivo no encontrado."
+
+#: FDirChooser.class:409
+msgid "Directory not found."
+msgstr "Directorio no encontrado."
+
+#: FDirChooser.class:513
+msgid "All files (*)"
+msgstr "Todos los archivos (*)"
+
+#: FDirChooser.class:944
+msgid "&Bookmark current directory"
+msgstr "Crear &marcador para este directorio"
+
+#: FDirChooser.class:952
+msgid "&Edit bookmarks..."
+msgstr "&Editar marcadores"
+
+#: FDirChooser.class:961
+msgid "Show &details"
+msgstr "Mostrar &detalles"
+
+#: FDirChooser.class:967
+msgid "Show &hidden files"
+msgstr "Mostrar archivos &ocultos"
+
+#: FDirChooser.class:973
+msgid "Show &image preview"
+msgstr "Mostrar vista previa de &imagen"
+
+#: FDirChooser.class:981
+msgid "&Rename"
+msgstr "&Renombrar"
+
+#: FDirChooser.class:986
+msgid "&Delete"
+msgstr "&Borrar"
+
+#: FDirChooser.class:993
+msgid "&Uncompress file"
+msgstr "&Descomprimir archivo"
+
+#: FDirChooser.class:998
+msgid "&Create directory"
+msgstr "&Crear directorio"
+
+#: FDirChooser.class:1003
+msgid "Open in &file manager..."
+msgstr "&Abrir en el administrador de archivos"
+
+#: FDirChooser.class:1008
+msgid "&Refresh"
+msgstr "&Refrescar"
+
+#: FDirChooser.class:1016
+msgid "&Properties"
+msgstr "&Propiedades"
+
+#: FDirChooser.class:1186
+msgid "Overwrite"
+msgstr "Sobrescribir"
+
+#: FDirChooser.class:1186
+msgid "Overwrite all"
+msgstr "Sobrescribir todos"
+
+#: FDirChooser.class:1186
+msgid "This file or directory already exists."
+msgstr "El fichero o directorio ya existe."
+
+#: FDirChooser.class:1205
+msgid "Cannot list archive contents"
+msgstr "No se puede listar el contenido del archivo"
+
+#: FDirChooser.class:1239
+msgid "Cannot uncompress file."
+msgstr "No se puede descomprimir el archivo."
+
+#: FDirChooser.class:1239
+msgid "Unknown archive."
+msgstr "Archivo desconocido."
+
+#: FDirChooser.class:1298
+msgid "Delete file"
+msgstr "Borrar archivo"
+
+#: FDirChooser.class:1299
+msgid "Do you really want to delete that file?"
+msgstr "¿Seguro que quieres borrar este archivo?"
+
+#: FDirChooser.class:1306
+msgid "Unable to delete file."
+msgstr "Imposible borrar archivo."
+
+#: FDirChooser.form:66
+msgid "Parent directory"
+msgstr "Directorio padre"
+
+#: FDirChooser.form:72
+msgid "Root directory"
+msgstr "Directorio raíz"
+
+#: FDirChooser.form:133
+msgid "Image preview"
+msgstr "Vista preliminar"
+
+#: FDirChooser.form:141
+msgid "Detailed view"
+msgstr "Vista detallada"
+
+#: FDirChooser.form:149
+msgid "File properties"
+msgstr "Propiedades de archivo"
+
+#: FDirChooser.form:155
+msgid "Show files"
+msgstr "Mostrar archivos"
+
+#: FDirChooser.form:174
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: FDirChooser.form:236 FInputBox.form:43 FWizard.class:71
+msgid "OK"
+msgstr "-"
+
+#: FDirChooser.form:242 FEditBookmark.class:109 FInputBox.form:49
+#: FSidePanel.class:976 FWizard.form:54
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: FEditBookmark.class:20 FileView.class:111
+msgid "Name"
+msgstr "Nombre"
+
+#: FEditBookmark.class:21
+msgid "Path"
+msgstr "Ruta"
+
+#: FEditBookmark.class:109
+msgid "Do you really want to remove this bookmark?"
+msgstr "¿Seguro que quieres borrar este marcador?"
+
+#: FEditBookmark.form:14
+msgid "Edit bookmarks"
+msgstr "Editar marcadores"
+
+#: FEditBookmark.form:33
+msgid "Up"
+msgstr "Arriba"
+
+#: FEditBookmark.form:39
+msgid "Down"
+msgstr "Abajo"
+
+#: FEditBookmark.form:45
+msgid "Remove"
+msgstr "Eliminar"
+
+#: FEditBookmark.form:56 FFileProperties.form:245
+msgid "Close"
+msgstr "Cerrar"
+
+#: FFileProperties.class:75
+msgid "Symbolic link"
+msgstr "Enlace simbólico"
+
+#: FFileProperties.class:95
+msgid "Image"
+msgstr "Imagen"
+
+#: FFileProperties.class:128
+msgid "&1 properties"
+msgstr "Propiedades de &1"
+
+#: FFileProperties.class:159 Main.module:46
+msgid "&1 B"
+msgstr "-"
+
+#: FFileProperties.class:164
+msgid "no file"
+msgstr "no hay archivo"
+
+#: FFileProperties.class:166
+msgid "one file"
+msgstr "un archivo"
+
+#: FFileProperties.class:168
+msgid "files"
+msgstr "archivos"
+
+#: FFileProperties.class:172
+msgid "no directory"
+msgstr "no hay directorio"
+
+#: FFileProperties.class:174
+msgid "one directory"
+msgstr "un directorio"
+
+#: FFileProperties.class:176
+msgid "directories"
+msgstr "directorios"
+
+#: FFileProperties.form:49
+msgid "General"
+msgstr "-"
+
+#: FFileProperties.form:82
+msgid "Type"
+msgstr "Tipo"
+
+#: FFileProperties.form:94
+msgid "Directory"
+msgstr "Directorio"
+
+#: FFileProperties.form:106 FileView.class:113
+msgid "Size"
+msgstr "Tamaño"
+
+#: FFileProperties.form:118 FileView.class:115
+msgid "Last modified"
+msgstr "Última modificación"
+
+#: FFileProperties.form:130
+msgid "Permissions"
+msgstr "Permisos"
+
+#: FFileProperties.form:143
+msgid "Owner"
+msgstr "Propietario"
+
+#: FFileProperties.form:155
+msgid "Group"
+msgstr "Grupo"
+
+#: FFileProperties.form:166
+msgid "Preview"
+msgstr "Vista preliminar"
+
+#: FFileProperties.form:220
+msgid "Errors"
+msgstr "Errores"
+
+#: FFontChooser.class:183
+msgid "How quickly daft jumping zebras vex"
+msgstr "How quickly daft jumping zebras vex"
+
+#: FFontChooser.form:49
+msgid "Bold"
+msgstr "Negrita"
+
+#: FFontChooser.form:56
+msgid "Italic"
+msgstr "Cursiva"
+
+#: FFontChooser.form:63
+msgid "Underline"
+msgstr "Subrayado"
+
+#: FFontChooser.form:70
+msgid "Strikeout"
+msgstr "Tachado"
+
+#: FFontChooser.form:79
+msgid "Relative"
+msgstr "Relativo"
+
+#: FFontChooser.form:123
+msgid "ComboBox1"
+msgstr "-"
+
+#: FLCDLabel.form:15
+msgid "12:34"
+msgstr "-"
+
+#: FMain.form:21 FSwitchButton.form:27
+msgid "ButtonBox1"
+msgstr "-"
+
+#: FMessage.form:39
+msgid "Do not display this message again"
+msgstr "No mostrar este mensaje de nuevo"
+
+#: FSidePanel.class:966
+msgid "Hidden"
+msgstr "Oculto"
+
+#: FSidePanel.class:970
+msgid "Transparent"
+msgstr "Transparente"
+
+#: FSwitchButton.form:16 FTestBalloon.form:12 Form1.form:45
+msgid "TextBox1"
+msgstr "-"
+
+#: FSwitchButton.form:32 FTestBalloon.form:17 Form4.form:19
+msgid "Button1"
+msgstr "-"
+
+#: FSwitchButton.form:37 Form1.form:40
+msgid "Label1"
+msgstr "-"
+
+#: FWizard.class:67
+msgid "&Next"
+msgstr "&Siguiente"
+
+#: FWizard.form:60
+msgid "Next"
+msgstr "Siguiente"
+
+#: FWizard.form:66
+msgid "Previous"
+msgstr "Anterior"
+
+#: FileView.class:934
+msgid "Cannot rename file."
+msgstr "No se puede renombrar el archivo."
+
+#: Form1.form:35
+msgid "Balloon"
+msgstr "Globo"
+
+#: Form2.form:122 Form4.form:14
+msgid "MenuButton1"
+msgstr "-"
+
+#: Form2.form:127
+msgid "ButtonBox2"
+msgstr "-"
+
+#: Form3.form:19
+msgid "1"
+msgstr "-"
+
+#: Form5.form:18
+msgid "Menu2"
+msgstr "-"
+
+#: Form5.form:22
+msgid "Menu3"
+msgstr "-"
+
+#: Form5.form:26
+msgid "Menu4"
+msgstr "-"
+
+#: Form5.form:30
+msgid "Menu5"
+msgstr "-"
+
+#: Help.module:71
+msgid "The '/' character is forbidden inside file or directory names."
+msgstr "El caracter '/' esta prohibido dentro de los nombre de directorios o archivos"
+
+#: Main.module:48
+msgid "&1 KiB"
+msgstr "-"
+
+#: Main.module:50
+msgid "&1 MiB"
+msgstr "-"
+
+#: Main.module:52
+msgid "&1 GiB"
+msgstr "-"
+
+#: SwitchButton.class:95
+msgid "ON"
+msgstr "-"
+
+#: SwitchButton.class:98
+msgid "OFF"
+msgstr "-"
+
+#: Wizard.class:77
+msgid "Step #&1"
+msgstr "Paso #&1"

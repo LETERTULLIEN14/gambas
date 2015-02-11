@@ -1,0 +1,44 @@
+' Gambas class file
+
+Static Public FixedOnly As Boolean
+
+Static Public Function SelectFont() As Boolean
+  
+  Return Not FFontDialog.ShowModal()
+
+End
+
+
+Public Sub btnOK_Click()
+
+  If dlgFont.SelectedFont Then
+    Dialog.Font = Font[dlgFont.SelectedFont]
+  Else
+    Dialog.Font = Null
+  Endif
+  Me.Close(True)
+
+End
+
+Public Sub btnCancel_Click()
+
+  Me.Close
+
+End
+
+Public Sub Form_Open()
+
+  dlgFont.FixedOnly = FixedOnly
+  If Dialog.Font Then
+    dlgFont.SelectedFont = Dialog.Font.ToString()
+  Else
+    dlgFont.SelectedFont = Null
+  Endif
+
+End
+
+Public Sub dlgFont_Activate()
+
+  btnOK.Value = True
+
+End

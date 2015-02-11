@@ -1,0 +1,44 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,77,74)
+  { ToolBar1 ToolBar
+    MoveScaled(0,0,45,5)
+    Separator = True
+    { ToolButton1 ToolButton
+      MoveScaled(0,0,5,4)
+      Picture = Picture["icon:/22/bookmark"]
+    }
+    { ToolButton2 ToolButton
+      MoveScaled(5,0,4,4)
+      Picture = Picture["icon:/22/computer"]
+    }
+    { Separator1 Separator
+      MoveScaled(10,0,1,4)
+    }
+    { ToolButton3 ToolButton
+      MoveScaled(13,0,4,4)
+      Picture = Picture["icon:/22/edit"]
+    }
+    { ToolButton4 ToolButton
+      MoveScaled(18,0,4,4)
+      Picture = Picture["icon:/22/component"]
+    }
+  }
+  { Button1 Button
+    MoveScaled(3,56,16,4)
+    Text = ("Button1")
+  }
+  { Workspace1 Workspace
+    MoveScaled(7,8,64,46)
+    Border = False
+  }
+  { Button2 Button
+    MoveScaled(29,57,16,4)
+    Text = ("Window")
+  }
+  { Button3 Button
+    MoveScaled(29,62,16,4)
+    Text = ("Orientation")
+  }
+}

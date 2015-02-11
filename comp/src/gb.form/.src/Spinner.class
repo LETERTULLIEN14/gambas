@@ -1,0 +1,153 @@
+' Gambas class file
+
+Export
+
+Inherits UserControl
+
+Public Const _Properties As String = "*,Border{Border.*}=None,Label"
+Public Const _DefaultSize As String = "8,8"
+
+Property Border As Integer
+Property Label As Boolean
+Property Value As Float
+Property Enabled As Boolean
+
+Private $hDrawingArea As DrawingArea
+Private $fStartTime As Float
+Private $hTimer As Timer
+Private $iBorder As Integer
+Private $bLabel As Boolean
+Private $fValue As Float
+
+Public Sub _new()
+  
+  $hDrawingArea = New DrawingArea(Me) As "DrawingArea"
+  Start
+  
+End
+
+Public Sub Start()
+  
+  $fStartTime = Timer
+  $hTimer = New Timer As "Timer"
+  $hTimer.Delay = 50
+  $hTimer.Start
+  
+End
+
+Public Sub Stop()
+  
+  $fStartTime = 0
+  $hTimer = Null
+  
+End
+
+Public Sub DrawingArea_Draw()
+  
+  Dim iFlag As Integer
+  Dim A As Float
+  Dim X As Float
+  Dim Y As Float
+  Dim R As Variant
+  Dim D As Float
+  Dim I As Integer
+  Dim C As Float
+  
+  If Not Me.Design Then
+    If $fStartTime = 0 Then Goto DRAW_BORDER
+    D = Frac(Timer - $fStartTime) * Pi(2)
+  Endif
+  
+  X = Paint.W / 2
+  Y = Paint.H / 2
+  R = Min(Paint.W, Paint.H) / 2 * 7 / 8
+  
+  Paint.LineWidth = R / 8
+  Paint.LineCap = Paint.LineCapRound
+  
+  For I = 0 To 11
+    
+    A = Pi(2) * I / 12
+    C = Frac(1 + (D - A) / Pi(2))
+    
+    'Paint.Background = Color.Merge(Color.Background, Color.Foreground, C / 4)
+    Paint.Background = Color.SetAlpha(Color.Foreground, 255 * (1 - C / 4))
+    Paint.MoveTo(X + Cos(A) * R / 2, Y + Sin(A) * R / 2)
+    Paint.LineTo(X + Cos(A) * R, Y + Sin(A) * R)
+    Paint.Stroke
+    
+  Next
+  
+  If $bLabel Then
+    Paint.Background = Color.Foreground
+    Paint.DrawText(Format($fValue, "0%"), 0, 0, Paint.W, Paint.H, Align.Center)
+  Endif
+  
+DRAW_BORDER:
+  
+  If $iBorder Then Style.PaintPanel(0, 0, Paint.W, Paint.H, $iBorder, iFlag)
+  
+End
+
+Public Sub Timer_Timer()
+  
+  $hDrawingArea.Refresh
+  
+End
+
+Private Function Border_Read() As Integer
+
+  Return $iBorder
+
+End
+
+Private Sub Border_Write(Value As Integer)
+
+  $iBorder = Value
+  $hDrawingArea.Refresh
+
+End
+
+Private Function Label_Read() As Boolean
+
+  Return $bLabel
+
+End
+
+Private Sub Label_Write(Value As Boolean)
+
+  $bLabel = Value
+  $hDrawingArea.Refresh
+
+End
+
+Private Function Value_Read() As Float
+
+  Return $fValue
+
+End
+
+Private Sub Value_Write(Value As Float)
+
+  $fValue = Max(0, Min(1, Value))
+  $hDrawingArea.Refresh
+
+End
+
+Private Function Enabled_Read() As Boolean
+
+  Return Super.Enabled
+
+End
+
+Private Sub Enabled_Write(Value As Boolean)
+
+  If Value = Me.Enabled Then Return
+  Super.Enabled = Value
+  If Value Then
+    Start
+  Else
+    Me.Stop
+  Endif
+
+End

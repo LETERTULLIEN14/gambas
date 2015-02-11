@@ -1,0 +1,79 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,79,71)
+  Text = ("Patch the current project")
+  Icon = Picture["icon:/16/pen"]
+  Arrangement = Arrange.Fill
+  Spacing = True
+  { VSplit1 VSplit
+    MoveScaled(1,2,76,68)
+    { VBox2 VBox
+      MoveScaled(1,2,65,36)
+      { Panel3 VBox
+        MoveScaled(4,3,42,9)
+        Margin = True
+        { Label1 Label
+          MoveScaled(1,1,21,3)
+          Font = Font["Bold"]
+          Text = ("Select patch")
+        }
+        { txtPath ButtonBox
+          MoveScaled(1,4,19,4)
+          Picture = Picture["icon:/small/open"]
+          ReadOnly = True
+        }
+      }
+      { Separator1 Separator
+        MoveScaled(25,14,22,0)
+      }
+      { gvwHunks GridView
+        MoveScaled(5,17,58,15)
+        Font = Font["Monospace"]
+        Expand = True
+        Border = False
+        Mode = Select.Multiple
+        Grid = False
+      }
+    }
+    { Panel2 VBox
+      MoveScaled(2,42,60,24)
+      { edtPatch Editor
+        MoveScaled(2,2,17,13)
+        Expand = True
+        Border = False
+        ReadOnly = True
+      }
+      { Separator2 Separator
+        MoveScaled(0,16,20,0)
+      }
+      { HBox2 HBox
+        MoveScaled(0,17,59,6)
+        Spacing = True
+        Margin = True
+        { btnApply Button
+          MoveScaled(0,0,15,4)
+          Enabled = False
+          Text = Shortcut(("Apply"), "A")
+          Picture = Picture["icon:/small/apply"]
+        }
+        { btnRevert Button
+          MoveScaled(16,0,16,4)
+          Enabled = False
+          Text = Shortcut(("Revert"), "R")
+          Picture = Picture["icon:/small/undo"]
+        }
+        { Panel1 Panel
+          MoveScaled(34,0,2,3)
+          Expand = True
+        }
+        { btnClose Button
+          MoveScaled(39,0,16,4)
+          AutoResize = True
+          Text = Shortcut(("Close"), "C")
+          Picture = Picture["icon:/small/close"]
+        }
+      }
+    }
+  }
+}

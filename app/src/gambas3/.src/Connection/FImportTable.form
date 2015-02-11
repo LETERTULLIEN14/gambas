@@ -1,0 +1,167 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,70,64)
+  Text = ("Import file")
+  Icon = Picture["icon:/medium/open"]
+  Arrangement = Arrange.Vertical
+  Spacing = True
+  Margin = True
+  { tabImport TabPanel
+    MoveScaled(1,1,66,57)
+    Expand = True
+    Arrangement = Arrange.Fill
+    Count = 4
+    Index = 0
+    Text = ("File properties")
+    { fprImport FileProperties
+      MoveScaled(2,1,62,50)
+      Border = False
+    }
+    Index = 1
+    Text = ("Options")
+    { Panel3 VBox
+      MoveScaled(1,1,63,51)
+      Spacing = True
+      Margin = True
+      { Label8 Label
+        MoveScaled(0,0,36,3)
+        Font = Font["Bold"]
+        Text = ("Source")
+      }
+      { HPanel1 HPanel
+        MoveScaled(0,3,62,29)
+        Spacing = True
+        Indent = True
+        { Label6 Label
+          MoveScaled(0,0,28,3)
+          Text = ("Charset")
+        }
+        { cmbCharset ComboBox
+          MoveScaled(29,0,31,4)
+          #Translate = False
+          Expand = True
+          List = ["UTF-8", "ISO 8859-1", "ISO 8859-15", "WINDOWS-1252"]
+        }
+        { Label7 Label
+          MoveScaled(0,5,28,3)
+          Text = ("End of line")
+        }
+        { cmbEndOfLine ComboBox
+          MoveScaled(29,5,31,4)
+          #Translate = False
+          Expand = True
+          ReadOnly = True
+          List = ["Unix", "Windows", "Mac"]
+        }
+        { Label2 Label
+          MoveScaled(0,10,28,3)
+          Text = ("Delimiter character")
+        }
+        { cmbDelim ComboBox
+          MoveScaled(29,10,31,4)
+          #Translate = False
+          Expand = True
+          List = ["Tab", "Space", ",", ";", ":"]
+        }
+        { Label3 Label
+          MoveScaled(0,15,28,3)
+          Text = ("Enclose character")
+        }
+        { cmbEscape ComboBox
+          MoveScaled(29,15,31,4)
+          #Translate = False
+          Expand = True
+          List = ["", "'", "\""]
+        }
+        { chkStrip CheckBox
+          MoveScaled(0,19,47,4)
+          Expand = True
+          Text = ("Strip useless white spaces")
+        }
+        { Label4 Label
+          MoveScaled(0,24,28,3)
+          Text = ("Ignore first lines")
+        }
+        { txtIgnore SpinBox
+          MoveScaled(29,24,9,4)
+        }
+        { Label10 Label
+          MoveScaled(39,24,7,3)
+          Expand = True
+          Text = ("Line(s)")
+        }
+      }
+      { Label9 Label
+        MoveScaled(0,33,36,3)
+        Font = Font["Bold"]
+        Text = ("Destination")
+      }
+      { HPanel2 HPanel
+        MoveScaled(0,36,62,14)
+        Spacing = True
+        Indent = True
+        { Label1 Label
+          MoveScaled(0,0,16,4)
+          Text = ("Table")
+        }
+        { cmbTable ComboBox
+          MoveScaled(16,0,44,4)
+          Expand = True
+        }
+        { Panel2 Panel
+          MoveScaled(0,5,16,3)
+        }
+        { chkFirstLine CheckBox
+          MoveScaled(16,5,35,3)
+          Expand = True
+          Text = ("The first line contains field names")
+        }
+        { Label5 Label
+          MoveScaled(0,10,16,3)
+          Text = ("Key field")
+        }
+        { cmbKey ComboBox
+          MoveScaled(16,10,44,4)
+          Enabled = False
+          Expand = True
+          ReadOnly = True
+        }
+      }
+    }
+    Index = 2
+    Text = ("Preview")
+    { txtPreview TextArea
+      MoveScaled(1,1,61,43)
+      ReadOnly = True
+      Border = False
+    }
+    Index = 3
+    Text = ("Messages")
+    { gvwMessage GridView
+      MoveScaled(2,1,59,49)
+      Border = False
+    }
+    Index = 0
+  }
+  { HBox1 HBox
+    MoveScaled(1,59,66,4)
+    Spacing = True
+    { Panel1 Panel
+      MoveScaled(7,1,3,2)
+      Expand = True
+    }
+    { btnOK Button
+      MoveScaled(31,0,16,4)
+      Text = Shortcut(("Import"), "I")
+      Picture = Picture["icon:/small/open"]
+      Default = True
+    }
+    { btnCancel Button
+      MoveScaled(48,0,16,4)
+      Text = ("Close")
+      Picture = Picture["icon:/small/close"]
+      Cancel = True
+    }
+  }
+}

@@ -1,0 +1,171 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,2.1429,97,54)
+  Text = ("Console - Gambas")
+  Icon = Picture["icon:/small/terminal"]
+  Persistent = True
+  Arrangement = Arrange.Vertical
+  { mnuEditor Menu
+    Enabled = False
+    Visible = False
+    { mnuUndo Menu btnUndo
+      Name = "mnuUndo"
+      Text = ("Undo")
+      Picture = Picture["icon:/small/undo"]
+      Shortcut = "Ctrl+Z"
+    }
+    { mnuRedo Menu btnRedo
+      Name = "mnuRedo"
+      Text = ("Redo")
+      Picture = Picture["icon:/small/redo"]
+      Shortcut = "Ctrl+Y"
+    }
+    { Menu1 Menu
+    }
+    { mnuCut Menu btnCut
+      Name = "mnuCut"
+      Text = ("Cut")
+      Picture = Picture["icon:/small/cut"]
+      Shortcut = "Ctrl+X"
+    }
+    { mnuCopy Menu btnCopy
+      Name = "mnuCopy"
+      Text = ("Copy")
+      Picture = Picture["icon:/small/copy"]
+      Shortcut = "Ctrl+C"
+    }
+    { mnuPaste Menu btnPaste
+      Name = "mnuPaste"
+      Text = ("Paste")
+      Picture = Picture["icon:/small/paste"]
+      Shortcut = "Ctrl+V"
+    }
+    { mnuClear Menu btnClear
+      Name = "mnuClear"
+      Text = ("Clear")
+      Picture = Picture["icon:/small/clear"]
+      Shortcut = "Ctrl+L"
+    }
+    { Menu2 Menu
+    }
+    { mnuFindNext Menu
+      Action = "find-next"
+      Text = ("Find next")
+      Picture = Picture["icon:/small/down"]
+      Shortcut = "F3"
+    }
+    { mnuFindPrevious Menu
+      Action = "find-previous"
+      Text = ("Find previous")
+      Picture = Picture["icon:/small/up"]
+      Shortcut = "Shift+F3"
+    }
+  }
+  { tlbOutput ToolBar
+    MoveScaled(1,1,90,4)
+    Separator = True
+    { btnUndock ToolButton
+      MoveScaled(0,0,4,4)
+      ToolTip = ("Undock console")
+      Picture = Picture["icon:/small/fullscreen"]
+      Toggle = True
+    }
+    { btnAbove ToolButton
+      MoveScaled(4,0,4,4)
+      ToolTip = ("Keep above")
+      Picture = Picture["img/16/raise.png"]
+      Toggle = True
+    }
+    { btnClear ToolButton
+      MoveScaled(8,0,4,4)
+      ToolTip = ("Clear console")
+      Picture = Picture["icon:/small/clear"]
+    }
+    { btnCut ToolButton
+      MoveScaled(12,0,4,4)
+      ToolTip = ("Cut")
+      Picture = Picture["icon:/small/cut"]
+    }
+    { btnCopy ToolButton
+      MoveScaled(16,0,4,4)
+      ToolTip = ("Copy")
+      Picture = Picture["icon:/small/copy"]
+    }
+    { btnPaste ToolButton
+      MoveScaled(20,0,4,4)
+      ToolTip = ("Paste")
+      Picture = Picture["icon:/small/paste"]
+    }
+    { btnEcho ToolButton
+      MoveScaled(24,0,9,4)
+      ToolTip = ("Entered text echo")
+      AutoResize = True
+      Text = ("Echo")
+      Picture = Picture["icon:/small/insert-text"]
+      Toggle = True
+    }
+    { Separator1 Separator
+      MoveScaled(37,0,1,4.1429)
+    }
+    { btnSearch ToolButton
+      MoveScaled(39,0,11,4)
+      AutoResize = True
+      Text = ("Search") & "..."
+      Picture = Picture["icon:/small/find"]
+    }
+    { sepCharset Separator
+      MoveScaled(53,0,1,4)
+      Visible = False
+    }
+    { chkCharset CheckBox
+      MoveScaled(54,0,19,4)
+      Visible = False
+      AutoResize = True
+      Text = ("Use system charset")
+    }
+  }
+  { edtOutput Editor
+    MoveScaled(1,9,38,34)
+    Tracking = True
+    NoTabFocus = True
+    Expand = True
+    Border = False
+    Highlight = Highlight.Custom
+    ReadOnly = True
+  }
+  { Separator2 Separator
+    MoveScaled(24,45,34,0)
+  }
+  { panEnter HBox
+    MoveScaled(1,49,92,5)
+    Background = Color.TextBackground
+    { lblEnter Label
+      MoveScaled(1,1,4,3)
+      Foreground = Color.SelectedBackground
+      Padding = 2
+      AutoResize = True
+      Text = ("?")
+    }
+    { txtEnter TextBox
+      MoveScaled(6,0,85,4)
+      Expand = True
+      Border = False
+    }
+  }
+}
+
+# Gambas Action File 3.0
+
+{ Actions
+  { Action find-next
+    Text = "Find next"
+    Shortcut = "F3"
+    Picture = "icon:/small/down"
+  }
+  { Action find-previous
+    Text = "Find previous"
+    Shortcut = "Shift+F3"
+    Picture = "icon:/small/up"
+  }
+}
